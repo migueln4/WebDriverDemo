@@ -17,6 +17,11 @@ public class WebDriverRadioButtons {
 
         radioButtons.get(2).click();
 
+        for(WebElement rb : radioButtons) {
+            if(rb.isSelected())
+                System.out.println(rb.getAttribute("value"));
+        }
+
     }
 
 }
